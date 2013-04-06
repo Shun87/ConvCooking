@@ -25,6 +25,9 @@
 		364D94CD170B369400AC8DE8 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364D94CB170B369400AC8DE8 /* FirstViewController.xib */; };
 		364D94D0170B369400AC8DE8 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364D94CE170B369400AC8DE8 /* SecondViewController.xib */; };
 		364D94D7170B36DD00AC8DE8 /* conversion in Resources */ = {isa = PBXBuildFile; fileRef = 364D94D6170B36DD00AC8DE8 /* conversion */; };
+		367B6CF9170C6DA200FF9CB7 /* Baking.plist in Resources */ = {isa = PBXBuildFile; fileRef = 367B6CF8170C6DA200FF9CB7 /* Baking.plist */; };
+		367B6D0B170FD00100FF9CB7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367B6D0A170FD00100FF9CB7 /* QuartzCore.framework */; };
+		367B6D0C170FD01800FF9CB7 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 367B6D09170FCEA600FF9CB7 /* NIDropDown.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,10 @@
 		364D94CC170B369400AC8DE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		364D94CF170B369400AC8DE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
 		364D94D6170B36DD00AC8DE8 /* conversion */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conversion; sourceTree = "<group>"; };
+		367B6CF8170C6DA200FF9CB7 /* Baking.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Baking.plist; sourceTree = "<group>"; };
+		367B6D08170FCEA600FF9CB7 /* NIDropDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NIDropDown.h; sourceTree = "<group>"; };
+		367B6D09170FCEA600FF9CB7 /* NIDropDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NIDropDown.m; sourceTree = "<group>"; };
+		367B6D0A170FD00100FF9CB7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FA693F0E170BE988005A0B66 /* Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversion.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367B6D0B170FD00100FF9CB7 /* QuartzCore.framework in Frameworks */,
 				364D94A6170B369400AC8DE8 /* UIKit.framework in Frameworks */,
 				364D94A8170B369400AC8DE8 /* Foundation.framework in Frameworks */,
 				364D94AA170B369400AC8DE8 /* CoreGraphics.framework in Frameworks */,
@@ -72,6 +80,7 @@
 		364D9499170B369400AC8DE8 = {
 			isa = PBXGroup;
 			children = (
+				367B6D0A170FD00100FF9CB7 /* QuartzCore.framework */,
 				364D94AB170B369400AC8DE8 /* ConvCooking */,
 				364D94A4170B369400AC8DE8 /* Frameworks */,
 				364D94A3170B369400AC8DE8 /* Products */,
@@ -99,6 +108,8 @@
 		364D94AB170B369400AC8DE8 /* ConvCooking */ = {
 			isa = PBXGroup;
 			children = (
+				367B6D08170FCEA600FF9CB7 /* NIDropDown.h */,
+				367B6D09170FCEA600FF9CB7 /* NIDropDown.m */,
 				364D94B4170B369400AC8DE8 /* AppDelegate.h */,
 				364D94B5170B369400AC8DE8 /* AppDelegate.m */,
 				364D94BD170B369400AC8DE8 /* FirstViewController.h */,
@@ -107,6 +118,7 @@
 				364D94C2170B369400AC8DE8 /* first@2x.png */,
 				364D94C4170B369400AC8DE8 /* SecondViewController.h */,
 				FA693F0E170BE988005A0B66 /* Conversion.h */,
+				367B6CF8170C6DA200FF9CB7 /* Baking.plist */,
 				364D94C5170B369400AC8DE8 /* SecondViewController.m */,
 				364D94C7170B369400AC8DE8 /* second.png */,
 				364D94C9170B369400AC8DE8 /* second@2x.png */,
@@ -194,6 +206,7 @@
 				364D94CD170B369400AC8DE8 /* FirstViewController.xib in Resources */,
 				364D94D0170B369400AC8DE8 /* SecondViewController.xib in Resources */,
 				364D94D7170B36DD00AC8DE8 /* conversion in Resources */,
+				367B6CF9170C6DA200FF9CB7 /* Baking.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +219,7 @@
 			files = (
 				364D94B2170B369400AC8DE8 /* main.m in Sources */,
 				364D94B6170B369400AC8DE8 /* AppDelegate.m in Sources */,
+				367B6D0C170FD01800FF9CB7 /* NIDropDown.m in Sources */,
 				364D94BF170B369400AC8DE8 /* FirstViewController.m in Sources */,
 				364D94C6170B369400AC8DE8 /* SecondViewController.m in Sources */,
 			);

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>6-Grain Flakes</key>
+	<string>27/3</string>
+	<key>Almond flour, toasted</key>
+	<string>27/3</string>
+	<key>Almonds, sliced</key>
+	<string>3</string>
+	<key>Almonds, slivered</key>
+	<string>4</string>
+	<key>Almond paste, packed</key>
+	<string>73/8</string>
+	<key>Almonds, whole unblanched</key>
+	<string>5</string>
+	<key>Amaranth flour</key>
+	<string>29/8</string>
+	<key>Ancient Grains</key>
+	<string>37/8</string>
+	<key>Apples, dried, diced</key>
+	<string>3</string>
+	<key>Apples, peeled, sliced</key>
+	<string>4</string>
+	<key>Apricots, dried, diced</key>
+	<string>9/2</string>
+	<key>Baking powder</key>
+	<string>1 tablespoon	1/2</string>
+	<key>Baker’s Cinnamon Filling</key>
+	<string>5 3/8</string>
+	<key>Bananas, mashed</key>
+	<string>8</string>
+	<key>Barley, cooked</key>
+	<string>7 5/8</string>
+	<key>Barley flakes (Sustagrain)</key>
+	<string>2 5/4</string>
+	<key>Barley flour</key>
+	<string>4</string>
+	<key>Barley, pearled</key>
+	<string>7 1/2</string>
+	<key>Basil Pesto</key>
+	<string>2 tablespoons	1</string>
+	<key>Berries, frozen</key>
+	<string>5</string>
+	<key>Boiled cider</key>
+	<string>12</string>
+	<key>Blueberries, dried</key>
+	<string>5 1/2</string>
+	<key>Blueberries, fresh</key>
+	<string>6</string>
+	<key>Bran cereal</key>
+	<string>2 1/8</string>
+	<key>Bread crumbs (dried, seasoned or plain)</key>
+	<string>4</string>
+	<key>Bread Crumbs, Japanese (Panko)</key>
+	<string>1 3/4</string>
+	<key>Bread crumbs, fresh</key>
+	<string>3/2</string>
+	<key>BS Brownie mix, dry</key>
+	<string>5 3/4</string>
+	<key>Brown rice, cooked</key>
+	<string>6</string>
+	<key>Buckwheat flour</key>
+	<string>4 1/4</string>
+	<key>Buckwheat, whole (kasha)</key>
+	<string>6</string>
+	<key>Bulgur</key>
+	<string>5 3/8</string>
+	<key>Butter</key>
+	<string>1/2 cup, 1 stick	4</string>
+	<key>Buttermilk, yogurt, sour cream</key>
+	<string>2 tablespoons	1</string>
+	<key>Buttermilk powder</key>
+	<string>2 tablespoons	 7/8</string>
+	<key>Cake Enhancer</key>
+	<string>2 tablespoons	 1/2</string>
+	<key>Caramel, 14-16 individual pieces</key>
+	<string>10</string>
+	<key>Caramel bits (Heath; chocolate or chopped toffee)</key>
+	<string>5 1/2</string>
+	<key>Candied peel</key>
+	<string>6</string>
+	<key>Caraway seeds</key>
+	<string>2 tablespoons	 5/8</string>
+	<key>Cashews, chopped</key>
+	<string>4</string>
+	<key>Cashews, whole</key>
+	<string>4</string>
+	<key>Carrots, grated</key>
+	<string>3 1/2</string>
+	<key>Carrots, cooked and pureed</key>
+	<string>9</string>
+	<key>Carrots, diced</key>
+	<string>5</string>
+	<key>Celery, diced</key>
+	<string>5</string>
+	<key>Cheese, grated (Cheddar, Jack, Mozz, Swiss)</key>
+	<string>4</string>
+	<key>Feta</key>
+	<string>4</string>
+	<key>Ricotta</key>
+	<string>8</string>
+	<key>Parmesan, grated</key>
+	<string>7/2</string>
+	<key>Cheese powder</key>
+	<string>4</string>
+	<key>Chickpea flour</key>
+	<string>3</string>
+	<key>Cherries, dried</key>
+	<string>5</string>
+	<key>Cherries, candied</key>
+	<string>7</string>
+	<key>Cherries, frozen</key>
+	<string>4</string>
+	<key>Chives, fresh</key>
+	<string>3/2</string>
+	<key>Chocolate, chopped</key>
+	<string>6</string>
+	<key>Chocolate chips</key>
+	<string>6</string>
+	<key>Cocoa, unsweetened</key>
+	<string>3</string>
+	<key>Coconut, grated, unsweetened</key>
+	<string>4</string>
+	<key>Coconut milk powder</key>
+	<string>4</string>
+	<key>Coconut, sweetened flakes</key>
+	<string>3</string>
+	<key>Cookie Crumbs</key>
+	<string>3</string>
+	<key>Coffee powder</key>
+	<string>2 teaspoons	 1/8</string>
+	<key>Cornmeal, whole</key>
+	<string>4 7/8</string>
+	<key>Corn syrup</key>
+	<string>11</string>
+	<key>Cornstarch</key>
+	<string>4</string>
+	<key>Cracked Wheat</key>
+	<string>2 5/8</string>
+	<key>Cranberries, dried</key>
+	<string>4</string>
+	<key>Cranberries, fresh or frozen</key>
+	<string>3 1/2</string>
+	<key>Currants</key>
+	<string>5</string>
+	<key>Dates, chopped</key>
+	<string>5 1/4</string>
+	<key>Dough Enhancer and Relaxer</key>
+	<string>2 tablespoons	 5/8</string>
+	<key>Egg white, fresh</key>
+	<string>1 large	1 1/4</string>
+	<key>Egg whites, dried</key>
+	<string>2 tablespoons	 3/8</string>
+	<key>Egg yolk, fresh</key>
+	<string>1 large	 1/2</string>
+	<key>Flaxseed</key>
+	<string>5</string>
+	<key>Flax flour</key>
+	<string>5/2</string>
+	<key>Figs, dried, chopped</key>
+	<string>5 1/4</string>
+	<key>Garlic cloves, in skin for roasting</key>
+	<string>1 large head	4</string>
+	<key>Garlic, minced</key>
+	<string>2 tablespoons	1</string>
+	<key>Garlic, peeled and sliced</key>
+	<string>1 cup	5 1/4</string>
+	<key>Ginger, crystallized</key>
+	<string>13/2</string>
+	<key>Ginger, fresh, sliced</key>
+	<string>8</string>
+	<key>Multi-Purpose Flour</key>
+	<string>5 1/2</string>
+	<key>Brown rice flour</key>
+	<string>4 1/2</string>
+	<key>Sorghum Flour</key>
+	<string>4 7/8</string>
+	<key>Whole Grain Flour</key>
+	<string>4 1/4</string>
+	<key>Graham Crackers, crushed</key>
+	<string>5</string>
+	<key>Graham cracker crumbs, boxed</key>
+	<string>3 1/2</string>
+	<key>Granola</key>
+	<string>4</string>
+	<key>Grape Nuts</key>
+	<string>1/2 cup	2</string>
+	<key>Harvest Grains Blend</key>
+	<string>1/2 cup	2 5/8</string>
+	<key>Hazelnut flour</key>
+	<string>1 cup	3 1/8</string>
+	<key>Hazelnuts, whole</key>
+	<string>1 cup	5</string>
+	<key>Hi-maize®</key>
+	<string>1/4 cup	1 1/8</string>
+	<key>Hi-Maize High-Fiber Flour</key>
+	<string>1 cup	4 1/4</string>
+	<key>Hi-Maize Whole Grain Cornmeal</key>
+	<string>1 cup	4</string>
+	<key>Honey</key>
+	<string>1 cup	12</string>
+	<key>Instant Clearjel®</key>
+	<string>1 tablespoon	 3/8</string>
+	<key>Jam or preserves</key>
+	<string>1/4 cup	3</string>
+	<key>Unbleached All-Purpose Flour</key>
+	<string>1 cup	4 1/4</string>
+	<key>9 grain flour blend</key>
+	<string>1 cup	 4 3/8</string>
+	<key>Artisan flour</key>
+	<string>1 cup	4 1/4</string>
+	<key>Bread flour</key>
+	<string>1 cup	4 1/4</string>
+	<key>Cake flour (Queen Quinevere)</key>
+	<string>4</string>
+	<key>Durum flour</key>
+	<string>1 cup	4 3/8</string>
+	<key>First Clear Flour</key>
+	<string>1 cup	3 3/4</string>
+	<key>French-Style flour</key>
+	<string>1 cup	4 1/4</string>
+	<key>Irish Style Wholemeal</key>
+	<string>1 cup	3 7/8</string>
+	<key>Italian 00</key>
+	<string>1 cup	3 3/4</string>
+	<key>Perfect Pasta Blend</key>
+	<string>1 cup	5 1/8</string>
+	<key>King Arthur Self-Rising Flour</key>
+	<string>1 cup	4</string>
+	<key> Perfect Pastry Blend</key>
+	<string>1 cup	4</string>
+	<key>Lancelot High-gluten</key>
+	<string>1 cup	4 1/4</string>
+	<key>Perfect Pizza Blend</key>
+	<string>1 cup	4 3/8</string>
+	<key>Round Table Pastry flour (white)</key>
+	<string>1 cup	3 3/4</string>
+	<key>Self-rising flour</key>
+	<string>1/3 cup	1 3/8</string>
+	<key>Unbleached cake flour blend</key>
+	<string>1 cup	4 1/4</string>
+	<key>Whole wheat (traditional)</key>
+	<string>1 cup	4</string>
+	<key>Whole wheat (white)</key>
+	<string>1 cup	4</string>
+	<key>Whole wheat pastry</key>
+	<string>1 cup	3 3/8</string>
+	<key>Lard</key>
+	<string>1/2 cup	4</string>
+	<key>Leeks, washed and diced</key>
+	<string>1 cup	3 1/4</string>
+	<key>Lemon powder</key>
+	<string>2 tablespoons	 5/8</string>
+	<key>Lime powder</key>
+	<string>2 tablespoons	 5/8</string>
+	<key>Macadamia nuts, whole</key>
+	<string>1 cup	5 1/4</string>
+	<key>Malted milk powder</key>
+	<string>1/4 cup	1 1/4</string>
+	<key>Malt syrup</key>
+	<string>2 tablespoons	1 1/2</string>
+	<key>Malted Wheat Flakes</key>
+	<string>1/2 cup	2 1/4</string>
+	<key>Maple sugar</key>
+	<string>1/2 cup	2 3/4</string>
+	<key>Maple syrup</key>
+	<string>1/2 cup	5 1/2</string>
+	<key>Maple Flav-R-Bites</key>
+	<string>1/2 cup	2 1/2</string>
+	<key>Marshmallow crème</key>
+	<string>1 cup	3</string>
+	<key>Marshmallow fluff®</key>
+	<string>1 cup	4 1/2</string>
+	<key>Marshmallows, mini</key>
+	<string>1 cup	1 1/2</string>
+	<key>Meringue powder</key>
+	<string>1/4 cup	1 1/2</string>
+	<key>Mayonnaise</key>
+	<string>1/2 cup	4</string>
+	<key>Milk, evaporated</key>
+	<string>1/2 cup	4 1/2</string>
+	<key>Milk, 1%</key>
+	<string>1 cup	8</string>
+	<key>Milk, baker’s special dry</key>
+	<string>1/4 cup	1 1/4</string>
+	<key>Milk, store bought nonfat dry</key>
+	<string>1/4 cup	 3/4</string>
+	<key>Milk, sweetened condensed</key>
+	<string>1/4 cup	2 3/4</string>
+	<key>Millet, whole</key>
+	<string>1/2 cup	3 5/8</string>
+	<key>Molasses</key>
+	<string>1/4 cup	3</string>
+	<key>Mushrooms, sliced</key>
+	<string>1 cup	2 3/4</string>
+	<key>Oat bran</key>
+	<string>1/2 cup	1 7/8</string>
+	<key>Oats, traditional rolled or thick flakes</key>
+	<string>1 cup	3 1/2</string>
+	<key>Oats, quick cooking</key>
+	<string>1 cup	3 1/8</string>
+	<key>Oats, steel cut, raw</key>
+	<string>1/2 cup	2 7/8</string>
+	<key>Oats, steel cut, cooked</key>
+	<string>1 cup	9</string>
+	<key>Oat flour</key>
+	<string>1 cup	3 1/4</string>
+	<key>Oil, vegetable</key>
+	<string>1 cup	7</string>
+	<key>Olives, sliced</key>
+	<string>1 cup	5</string>
+	<key>Onions, baking</key>
+	<string>1/2 cup	1 3/8</string>
+	<key>Onions, fresh, diced</key>
+	<string>1 cup	5</string>
+	<key>Orange juice powder</key>
+	<string>2 tablespoon	 5/8</string>
+	<key>Organic 6-Grain Flakes</key>
+	<string>1/2 cup	3 5/8</string>
+	<key>Peaches, peeled and diced</key>
+	<string>1 cup	6</string>
+	<key>Peanut butter</key>
+	<string>1/2 cup	4 3/4</string>
+	<key>Peanuts, whole, shelled</key>
+	<string>1 cup	5</string>
+	<key>Pears, peeled and diced</key>
+	<string>1 cup	5 3/4</string>
+	<key>Pecans, diced</key>
+	<string>1 cup	3 7/8</string>
+	<key>Peppers, red or green, fresh</key>
+	<string>1 cup	5</string>
+	<key>Persimmon pulp</key>
+	<string>1 cup	8 1/2</string>
+	<key>Pineapple, dried</key>
+	<string>1/2 cup	2 1/2</string>
+	<key>Pineapple juice powder</key>
+	<string>2 tablespoons	 5/8</string>
+	<key>Pineapple, fresh or canned, diced</key>
+	<string>1 cup	8 1/2</string>
+	<key>Pie Filling Enhancer</key>
+	<string>1/4 cup	1 5/8</string>
+	<key>Pine nuts</key>
+	<string>1/2 cup	2 1/2</string>
+	<key>Pistachio nuts</key>
+	<string>1/2 cup	2 1/8</string>
+	<key>Pistachio paste</key>
+	<string>1/4 cup	2 3/4</string>
+	<key>Popped corn</key>
+	<string>4 cups	 3/4</string>
+	<key>Poppy seeds</key>
+	<string>1/4 cup	 3/8</string>
+	<key>Polenta (coarse ground cornmeal)</key>
+	<string>1 cup	5 3/4</string>
+	<key>Potato flour</key>
+	<string>1/4 cup	1 5/8</string>
+	<key>Potato Starch</key>
+	<string>1 cup	5 3/8</string>
+	<key>Potatoes, mashed</key>
+	<string>1 cup	7 1/2</string>
+	<key>Praline paste</key>
+	<string>1/2 cup	5 1/2</string>
+	<key>Pumpkin, canned</key>
+	<string>1 cup	9 1/2</string>
+	<key>Quinoa flour</key>
+	<string>1 cup	3 7/8</string>
+	<key>Quinoa, whole</key>
+	<string>1 cup	6 1/4</string>
+	<key>Quinoa, cooked</key>
+	<string>1 cup	6 1/2</string>
+	<key>Raisins, loose</key>
+	<string>1 cup	5 1/4</string>
+	<key>Raisins, packed</key>
+	<string>1/2 cup	3</string>
+	<key>Raspberries, fresh</key>
+	<string>1 cup	4 1/4</string>
+	<key>Rhubarb, fresh, medium dice</key>
+	<string>1 cup	4 1/4</string>
+	<key>Rice Krispies</key>
+	<string>1 cup	1</string>
+	<key>Rice, Long grain, dry</key>
+	<string>1/2 cup	3 1/2</string>
+	<key>Rice Flour, Brown</key>
+	<string>1 cup	5 3/8</string>
+	<key>Rice Flour, White</key>
+	<string>1 cup	5</string>
+	<key>Rye flakes</key>
+	<string>Rye flakes</string>
+	<key>Medium Rye</key>
+	<string>1 cup	3 5/8</string>
+	<key>Perfect Rye Blend</key>
+	<string>1 cup	3 3/4</string>
+	<key>Pumpernickel</key>
+	<string>1 cup	3 3/4</string>
+	<key>White Rye</key>
+	<string>1 cup	3 3/4</string>
+	<key>Scallions, sliced</key>
+	<string>1 cup	2 1/4</string>
+	<key>Sesame seeds</key>
+	<string>1/2 cup	2 1/2</string>
+	<key>Semolina</key>
+	<string>1 cup	5 3/4</string>
+	<key>Shallots, peeled and sliced</key>
+	<string>1 cup	5 1/2</string>
+	<key>Signature Secrets</key>
+	<string>1/4 cup	 5/8</string>
+	<key>Sorghum flour</key>
+	<string>1 cup	4 7/8</string>
+	<key>Sour cream</key>
+	<string>1 cup	8</string>
+	<key>Soy flour</key>
+	<string>1/4 cup	1 1/4</string>
+	<key>Spelt flour</key>
+	<string>1 cup	3 1/2</string>
+	<key>Sprouted Wheat flour</key>
+	<string>1 cup	3 3/4</string>
+	<key>Strawberries, fresh sliced</key>
+	<string>1 cup	5 7/8</string>
+	<key>Sugar, granulated white</key>
+	<string>1 cup	7</string>
+	<key>Sugar, confectioners’, unsifted</key>
+	<string>2 cups	8</string>
+	<key>Sugar, dark or light brown, packed</key>
+	<string>1 cup	7 1/2</string>
+	<key>Sugar, demerara</key>
+	<string>1 cup	7 3/4</string>
+	<key>Sugar, Sticky Bun</key>
+	<string>1 cup	3 1/2</string>
+	<key>Sugar substitute: Splenda</key>
+	<string>1 cup	 7/8</string>
+	<key>Sugar substitute: Clabber Girl Sugar replacer for baking</key>
+	<string>1 cup	5</string>
+	<key>Sundried tomatoes (dry pack)</key>
+	<string>1 cup	6</string>
+	<key>Sunflower seeds</key>
+	<string>1/4 cup	1 1/4</string>
+	<key>Tahini paste</key>
+	<string>1/2 cup	2 1/2</string>
+	<key>Tapioca flour or starch</key>
+	<string>1 cup	4</string>
+	<key>Tapioca, quick-cooking</key>
+	<string>2 tablespoons	 3/4</string>
+	<key>Teff flour</key>
+	<string>1 cup	4 3/4</string>
+	<key>Toffee Chunks</key>
+	<string>1 cup	5 1/2</string>
+	<key>Vegetable shortening</key>
+	<string>1/4 cup	1 3/4</string>
+	<key>Vital Wheat Gluten</key>
+	<string>2 tablespoons	 5/8</string>
+	<key>Walnuts, whole</key>
+	<string>1/2 cup	2 1/4</string>
+	<key>chopped</key>
+	<string>1 cup	4</string>
+	<key>Water</key>
+	<string>1/3 cup	2 5/8</string>
+	<key>Wheat berries, red</key>
+	<string>1 cup	3 1/2</string>
+	<key>Wheat bran</key>
+	<string>1/2 cup	1 1/8</string>
+	<key>Wheat, cracked</key>
+	<string>1/2 cup	2 5/8</string>
+	<key>Wheat flakes, malted</key>
+	<string>1/4 cup	1</string>
+	<key>Wheat germ</key>
+	<string>1/4 cup	1</string>
+	<key>Yeast, instant</key>
+	<string>2 1/4 teaspoons	 1/4</string>
+	<key>Yogurt</key>
+	<string>1 cup	8</string>
+	<key>Zucchini, shredded</key>
+	<string>1 cup	6</string>
+</dict>
+</plist>

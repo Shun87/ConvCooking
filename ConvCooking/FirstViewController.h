@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NIDropDown.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController<NIDropDownDelegate>
+{
+    UITableView *resultView;
+    UITextField *inputTextField;
+    UITextField *resultTextfield;
+    
+    NIDropDown *dropDown;
+}
+@property (nonatomic, retain)IBOutlet UITableView *resultView;
+@property (nonatomic, retain)IBOutlet UITextField *inputTextField;
+@property (nonatomic, retain)IBOutlet UITextField *resultTextfield;
 
+- (IBAction)showUnit:(id)sender;
 @end

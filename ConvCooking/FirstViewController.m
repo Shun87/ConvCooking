@@ -13,6 +13,16 @@
 @end
 
 @implementation FirstViewController
+@synthesize resultView;
+@synthesize inputTextField, resultTextfield;
+
+- (void)dealloc
+{
+    [inputTextField release];
+    [resultTextfield release];
+    [resultView release];
+    [super dealloc];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +38,34 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)showUnit:(id)sender
+{
+    NSArray * arr = [[NSArray alloc] init];
+    arr = [NSArray arrayWithObjects:@"Hello 0", @"Hello 1", @"Hello 2", @"Hello 3", @"Hello 4", @"Hello 5", @"Hello 6", @"Hello 7", @"Hello 8", @"Hello 9",nil];
+    if(dropDown == nil)
+    {
+        CGFloat f = 200;
+        dropDown = [[NIDropDown alloc]showDropDown:sender height:&f arr:arr];
+        dropDown.delegate = self;
+    }
+    else
+    {
+        [dropDown hideDropDown:sender];
+        [self rel];
+    }
+}
+
+-(void)rel
+{
+    [dropDown release];
+    dropDown = nil;
+}
+
+- (void) niDropDownDelegateMethod: (NIDropDown *) sender
+{
+    [self rel];
 }
 
 - (void)didReceiveMemoryWarning
