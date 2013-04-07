@@ -27,7 +27,8 @@
     if (self) {
         // Initialization code
         CGRect btn = b.frame;
-        
+
+        rcExpand = CGRectMake(btn.origin.x, btn.origin.y, btn.size.width, btn.size.height);
         self.frame = CGRectMake(btn.origin.x, btn.origin.y+btn.size.height, btn.size.width, 0);
         self.list = [NSArray arrayWithArray:arr];
         self.layer.masksToBounds = NO;
@@ -43,11 +44,17 @@
         table.backgroundColor = [UIColor colorWithRed:0.239 green:0.239 blue:0.239 alpha:1];
         table.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         table.separatorColor = [UIColor grayColor];
-        
+
         [UIView beginAnimations:nil context:nil];
         [UIView setAnimationDuration:0.35];
         self.frame = CGRectMake(btn.origin.x, btn.origin.y+btn.size.height, btn.size.width, *height);
-        table.frame = CGRectMake(0, 0, btn.size.width, *height);
+        CGFloat value = *height;
+        if ([arr count] * 40 <= value)
+        {
+            value = [arr count] * 40;
+        }
+        
+        table.frame = CGRectMake(0, 0, btn.size.width, value);
         [UIView commitAnimations];
         
         [b.superview addSubview:self];
@@ -57,7 +64,7 @@
 }
 
 -(void)hideDropDown:(UIButton *)b {
-    CGRect btn = b.frame;
+    CGRect btn = rcExpand;
     
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:0.35];
@@ -105,15 +112,15 @@
     return cell;
 }
 
+- (void) myDelegate {
+    [self.delegate niDropDownDelegateMethod:self];   
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self hideDropDown:btnSender];
     UITableViewCell *c = [tableView cellForRowAtIndexPath:indexPath];
     [btnSender setTitle:c.textLabel.text forState:UIControlStateNormal];
     [self myDelegate];
-}
-
-- (void) myDelegate {
-    [self.delegate niDropDownDelegateMethod:self];   
 }
 
 -(void)dealloc {

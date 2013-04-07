@@ -10,10 +10,11 @@
 
 #import "FirstViewController.h"
 
-#import "SecondViewController.h"
+#import "TemperatureViewController.h"
 
 @implementation AppDelegate
-
+@synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
 - (void)dealloc
 {
     [_window release];
@@ -24,13 +25,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
-    UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
-    UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+
+    FirstViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
+    viewController1.type = kVolume;
+    FirstViewController *viewController2 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
+    viewController2.type = kWeight;
+    TemperatureViewController *viewController3 = [[[TemperatureViewController alloc] initWithNibName:@"TemperatureViewController" bundle:nil] autorelease];
+    viewController3.type = kTemperature;
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1,viewController2, viewController3, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    
+
     return YES;
 }
 

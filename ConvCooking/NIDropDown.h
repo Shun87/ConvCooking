@@ -14,7 +14,9 @@
 @end 
 
 @interface NIDropDown : UIView <UITableViewDelegate, UITableViewDataSource>
-
+{
+     CGRect rcExpand;
+}
 @property (nonatomic, retain) id <NIDropDownDelegate> delegate;
 
 -(void)hideDropDown:(UIButton *)b;

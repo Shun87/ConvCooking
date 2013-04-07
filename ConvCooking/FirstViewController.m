@@ -21,6 +21,7 @@
     [inputTextField release];
     [resultTextfield release];
     [resultView release];
+    [units release];
     [super dealloc];
 }
 
@@ -37,35 +38,57 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (IBAction)showUnit:(id)sender
-{
-    NSArray * arr = [[NSArray alloc] init];
-    arr = [NSArray arrayWithObjects:@"Hello 0", @"Hello 1", @"Hello 2", @"Hello 3", @"Hello 4", @"Hello 5", @"Hello 6", @"Hello 7", @"Hello 8", @"Hello 9",nil];
-    if(dropDown == nil)
+    if (type == kVolume)
     {
-        CGFloat f = 200;
-        dropDown = [[NIDropDown alloc]showDropDown:sender height:&f arr:arr];
-        dropDown.delegate = self;
+        [inputButton setTitle:@"Cup" forState:UIControlStateNormal];
+        [outputButton setTitle:@"Fluid ounce" forState:UIControlStateNormal];
+        [units addObjectsFromArray:[NSArray arrayWithObjects:@"Cup", @"Fluid ounce", @"Gallon",  @"Gill", @"Liter", @"Milliliter",
+                                    @"Pint", @"Quart", @"Tablespoon",  @"Teaspoon", nil]];
     }
-    else
+    else if (type == kWeight)
     {
-        [dropDown hideDropDown:sender];
-        [self rel];
+        [inputButton setTitle:@"Kilogram" forState:UIControlStateNormal];
+        [outputButton setTitle:@"Gram" forState:UIControlStateNormal];
+        [units addObjectsFromArray:[NSArray arrayWithObjects:@"Gram", @"Kilogram",  @"Ounce", @"Pound", nil]];
     }
 }
 
--(void)rel
+- (IBAction)showInputUnit:(id)sender
 {
-    [dropDown release];
-    dropDown = nil;
+    [self showUnit:sender];
 }
 
-- (void) niDropDownDelegateMethod: (NIDropDown *) sender
+- (IBAction)showOutputUnit:(id)sender
 {
-    [self rel];
+    [self showUnit:sender];
+}
+
+- (IBAction)done:(id)sender
+{
+    [inputTextField resignFirstResponder];
+    NSString *text = [self convertedResult:[inputTextField.text floatValue] sunit:inputButton.titleLabel.text
+                                    toConv:outputButton.titleLabel.text];
+    resultTextfield.text = text;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if ((([string compare:@"0"]  == NSOrderedDescending || [string compare:@"0"]  == NSOrderedSame) 
+        && ([string compare:@"9"]  == NSOrderedAscending || [string compare:@"9"]  == NSOrderedSame)) 
+        || [string isEqualToString:@""]
+        || [string isEqualToString:@"."]
+        || [string isEqualToString:@"\n"])
+    {
+        return YES;
+    }
+    
+    return NO;
+}
+
+- (IBAction)ClearAction:(id)sender
+{
+    inputTextField.text = nil;
+    resultTextfield.text = nil;
 }
 
 - (void)didReceiveMemoryWarning
