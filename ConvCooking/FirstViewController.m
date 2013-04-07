@@ -7,7 +7,10 @@
 //
 
 #import "FirstViewController.h"
-
+#define HEXCOLOR(rgbValue, alpa) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:alpa]
 @interface FirstViewController ()
 
 @end
@@ -15,13 +18,14 @@
 @implementation FirstViewController
 @synthesize resultView;
 @synthesize inputTextField, resultTextfield;
-
+@synthesize topLabel;
 - (void)dealloc
 {
     [inputTextField release];
     [resultTextfield release];
     [resultView release];
     [units release];
+    [topLabel release];
     [super dealloc];
 }
 
@@ -38,6 +42,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = HEXCOLOR(0xe9eaeb, 1);
+    UIImage *backgroundImage = [[UIImage imageNamed:@"textBk.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0,15,0,6)];
+    
+    inputTextField.background = backgroundImage;
+    resultTextfield.background = backgroundImage;
     if (type == kVolume)
     {
         [inputButton setTitle:@"Cup" forState:UIControlStateNormal];
@@ -51,6 +60,8 @@
         [outputButton setTitle:@"Gram" forState:UIControlStateNormal];
         [units addObjectsFromArray:[NSArray arrayWithObjects:@"Gram", @"Kilogram",  @"Ounce", @"Pound", nil]];
     }
+    
+    [self resetValue];
 }
 
 - (IBAction)showInputUnit:(id)sender
@@ -63,12 +74,25 @@
     [self showUnit:sender];
 }
 
-- (IBAction)done:(id)sender
+- (void)resetValue
 {
-    [inputTextField resignFirstResponder];
+    if ([inputTextField.text length] <= 0)
+    {
+        inputTextField.text = @"1.0";
+    }
+    
     NSString *text = [self convertedResult:[inputTextField.text floatValue] sunit:inputButton.titleLabel.text
                                     toConv:outputButton.titleLabel.text];
     resultTextfield.text = text;
+    NSString *eachValue = [self convertedResult:1.0 sunit:inputButton.titleLabel.text
+                                         toConv:outputButton.titleLabel.text];
+    topLabel.text = [NSString stringWithFormat:@"1 %@ = %@ %@", inputButton.titleLabel.text, eachValue, outputButton.titleLabel.text];
+}
+
+- (IBAction)done:(id)sender
+{
+    [inputTextField resignFirstResponder];
+    [self resetValue];
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string

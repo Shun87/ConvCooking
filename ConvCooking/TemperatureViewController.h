@@ -13,6 +13,7 @@
     UISlider *slider;
     UILabel *fahrenheitLabel;
     UILabel *celsiusLabel;
+    IBOutlet UITextView *textView;
 }
 @property (nonatomic, retain)IBOutlet UILabel *fahrenheitLabel;
 @property (nonatomic, retain)IBOutlet UILabel *celsiusLabel;

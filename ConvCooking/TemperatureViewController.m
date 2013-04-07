@@ -7,7 +7,10 @@
 //
 
 #import "TemperatureViewController.h"
-
+#define HEXCOLOR(rgbValue, alpa) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:alpa]
 @implementation TemperatureViewController
 @synthesize slider, fahrenheitLabel, celsiusLabel;
 
@@ -41,11 +44,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = HEXCOLOR(0xe9eaeb, 1);
     [units addObjectsFromArray:[NSArray arrayWithObjects:@"Celsius", @"Fahrenheit", nil]];
     self.slider.minimumValue = -100;
     self.slider.maximumValue = 800;
     self.slider.value = 32.0;
     [self temperatureChange:nil];
+    textView.backgroundColor = [UIColor clearColor];
+    fahrenheitLabel.textColor = HEXCOLOR(0x1e8fff, 1);
+    celsiusLabel.textColor = HEXCOLOR(0x1e8fff, 1);
 }
 
 - (IBAction)temperatureChange:(id)sender

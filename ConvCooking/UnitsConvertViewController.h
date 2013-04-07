@@ -25,4 +25,5 @@ typedef enum
 @property (nonatomic, assign) UnitType type;
 - (IBAction)showUnit:(id)sender;
 - (NSString *)convertedResult:(float)num sunit:(NSString *)inUnit toConv:(NSString *)toUnit;
+- (void)resetValue;
 @end

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3603A15E1711C107007A1B40 /* Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 3603A15C1711C107007A1B40 /* Top.png */; };
+		3603A15F1711C107007A1B40 /* Top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3603A15D1711C107007A1B40 /* Top@2x.png */; };
+		3603A1621711CA1B007A1B40 /* textBk.png in Resources */ = {isa = PBXBuildFile; fileRef = 3603A1601711CA1B007A1B40 /* textBk.png */; };
+		3603A1631711CA1B007A1B40 /* textBk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3603A1611711CA1B007A1B40 /* textBk@2x.png */; };
+		3603A1681711CAE7007A1B40 /* buttonBk.png in Resources */ = {isa = PBXBuildFile; fileRef = 3603A1641711CAE7007A1B40 /* buttonBk.png */; };
+		3603A1691711CAE7007A1B40 /* buttonBk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3603A1651711CAE7007A1B40 /* buttonBk@2x.png */; };
+		3603A16A1711CAE7007A1B40 /* unit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3603A1661711CAE7007A1B40 /* unit.png */; };
+		3603A16B1711CAE7007A1B40 /* unit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3603A1671711CAE7007A1B40 /* unit@2x.png */; };
 		364D94A6170B369400AC8DE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D94A5170B369400AC8DE8 /* UIKit.framework */; };
 		364D94A8170B369400AC8DE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D94A7170B369400AC8DE8 /* Foundation.framework */; };
 		364D94AA170B369400AC8DE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D94A9170B369400AC8DE8 /* CoreGraphics.framework */; };
@@ -32,7 +40,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		364D94A2170B369400AC8DE8 /* ConvCooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvCooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3603A15C1711C107007A1B40 /* Top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Top.png; path = image/Top.png; sourceTree = SOURCE_ROOT; };
+		3603A15D1711C107007A1B40 /* Top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Top@2x.png"; path = "image/Top@2x.png"; sourceTree = SOURCE_ROOT; };
+		3603A1601711CA1B007A1B40 /* textBk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textBk.png; path = image/textBk.png; sourceTree = SOURCE_ROOT; };
+		3603A1611711CA1B007A1B40 /* textBk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "textBk@2x.png"; path = "image/textBk@2x.png"; sourceTree = SOURCE_ROOT; };
+		3603A1641711CAE7007A1B40 /* buttonBk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonBk.png; path = image/buttonBk.png; sourceTree = SOURCE_ROOT; };
+		3603A1651711CAE7007A1B40 /* buttonBk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonBk@2x.png"; path = "image/buttonBk@2x.png"; sourceTree = SOURCE_ROOT; };
+		3603A1661711CAE7007A1B40 /* unit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unit.png; path = image/unit.png; sourceTree = SOURCE_ROOT; };
+		3603A1671711CAE7007A1B40 /* unit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unit@2x.png"; path = "image/unit@2x.png"; sourceTree = SOURCE_ROOT; };
+		364D94A2170B369400AC8DE8 /* CookingConv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookingConv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364D94A5170B369400AC8DE8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		364D94A7170B369400AC8DE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		364D94A9170B369400AC8DE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,7 +109,7 @@
 		364D94A3170B369400AC8DE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				364D94A2170B369400AC8DE8 /* ConvCooking.app */,
+				364D94A2170B369400AC8DE8 /* CookingConv.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,14 +127,22 @@
 		364D94AB170B369400AC8DE8 /* ConvCooking */ = {
 			isa = PBXGroup;
 			children = (
+				3603A15C1711C107007A1B40 /* Top.png */,
+				3603A15D1711C107007A1B40 /* Top@2x.png */,
+				3603A1601711CA1B007A1B40 /* textBk.png */,
+				3603A1611711CA1B007A1B40 /* textBk@2x.png */,
+				3603A1641711CAE7007A1B40 /* buttonBk.png */,
+				3603A1651711CAE7007A1B40 /* buttonBk@2x.png */,
+				3603A1661711CAE7007A1B40 /* unit.png */,
+				3603A1671711CAE7007A1B40 /* unit@2x.png */,
 				367B6D08170FCEA600FF9CB7 /* NIDropDown.h */,
 				367B6D09170FCEA600FF9CB7 /* NIDropDown.m */,
 				364D94B4170B369400AC8DE8 /* AppDelegate.h */,
 				364D94B5170B369400AC8DE8 /* AppDelegate.m */,
 				FAC85470171172E2006F742B /* TemperatureViewController.h */,
 				FAC85471171172E2006F742B /* TemperatureViewController.m */,
-				FAC85472171172E2006F742B /* TemperatureViewController.xib */,
 				FAC8545B17113C1D006F742B /* UnitsConvertViewController.h */,
+				FAC85472171172E2006F742B /* TemperatureViewController.xib */,
 				FAC8545C17113C1D006F742B /* UnitsConvertViewController.m */,
 				364D94BD170B369400AC8DE8 /* FirstViewController.h */,
 				364D94BE170B369400AC8DE8 /* FirstViewController.m */,
@@ -166,7 +190,7 @@
 			);
 			name = ConvCooking;
 			productName = ConvCooking;
-			productReference = 364D94A2170B369400AC8DE8 /* ConvCooking.app */;
+			productReference = 364D94A2170B369400AC8DE8 /* CookingConv.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,6 +236,14 @@
 				364D94D7170B36DD00AC8DE8 /* conversion in Resources */,
 				367B6CF9170C6DA200FF9CB7 /* Baking.plist in Resources */,
 				FAC85474171172E2006F742B /* TemperatureViewController.xib in Resources */,
+				3603A15E1711C107007A1B40 /* Top.png in Resources */,
+				3603A15F1711C107007A1B40 /* Top@2x.png in Resources */,
+				3603A1621711CA1B007A1B40 /* textBk.png in Resources */,
+				3603A1631711CA1B007A1B40 /* textBk@2x.png in Resources */,
+				3603A1681711CAE7007A1B40 /* buttonBk.png in Resources */,
+				3603A1691711CAE7007A1B40 /* buttonBk@2x.png in Resources */,
+				3603A16A1711CAE7007A1B40 /* unit.png in Resources */,
+				3603A16B1711CAE7007A1B40 /* unit@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +296,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chen Shun (Y62CH6PVF9)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -279,6 +311,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BCE582AF-9242-4F31-A1D1-B05D933DCEFA";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -313,7 +346,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ConvCooking/ConvCooking-Prefix.pch";
 				INFOPLIST_FILE = "ConvCooking/ConvCooking-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CookingConv;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -324,7 +357,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ConvCooking/ConvCooking-Prefix.pch";
 				INFOPLIST_FILE = "ConvCooking/ConvCooking-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CookingConv;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

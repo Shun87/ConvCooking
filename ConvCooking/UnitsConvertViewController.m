@@ -60,6 +60,7 @@
 {
     [dropDown release];
     dropDown = nil;
+    [self resetValue];
 }
 
 - (IBAction)showUnit:(id)sender
@@ -75,6 +76,11 @@
         [dropDown hideDropDown:sender];
         [self rel];
     }
+}
+
+- (void)resetValue
+{
+    
 }
 
 #pragma mark -- NIDropDownDelegate

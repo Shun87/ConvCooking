@@ -14,10 +14,11 @@
     UITableView *resultView;
     UITextField *inputTextField;
     UITextField *resultTextfield;
-    
+    UILabel *topLabel;
     IBOutlet UIButton *inputButton;
     IBOutlet UIButton *outputButton;
 }
+@property (nonatomic, retain)IBOutlet UILabel *topLabel;
 @property (nonatomic, retain)IBOutlet UITableView *resultView;
 @property (nonatomic, retain)IBOutlet UITextField *inputTextField;
 @property (nonatomic, retain)IBOutlet UITextField *resultTextfield;
