@@ -7,6 +7,8 @@
 //
 
 #import "TemperatureViewController.h"
+#import "AppDelegate.h"
+
 #define HEXCOLOR(rgbValue, alpa) \
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
@@ -53,6 +55,22 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:alpa]
     textView.backgroundColor = [UIColor clearColor];
     fahrenheitLabel.textColor = HEXCOLOR(0x1e8fff, 1);
     celsiusLabel.textColor = HEXCOLOR(0x1e8fff, 1);
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    
+    if (app.adBanner.superview != nil)
+    {
+        [app.adBanner removeFromSuperview];
+    }
+    CGRect rect = app.adBanner.frame;
+    rect.origin.y = self.view.frame.size.height -  CGSizeFromGADAdSize(kGADAdSizeBanner).height;
+    app.adBanner.frame = rect;
+    app.adBanner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+    [self.view addSubview:app.adBanner];
 }
 
 - (IBAction)temperatureChange:(id)sender

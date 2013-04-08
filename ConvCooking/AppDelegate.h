@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GADBannerView.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
-
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate, GADBannerViewDelegate>
+{
+    GADBannerView *bannerView_;
+}
 @property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic, retain) GADBannerView *adBanner;
 @property (strong, nonatomic) UITabBarController *tabBarController;
 
 @end

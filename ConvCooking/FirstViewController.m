@@ -7,6 +7,8 @@
 //
 
 #import "FirstViewController.h"
+#import "AppDelegate.h"
+
 #define HEXCOLOR(rgbValue, alpa) \
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
@@ -33,8 +35,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:alpa]
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+
     }
     return self;
 }
@@ -56,12 +57,39 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:alpa]
     }
     else if (type == kWeight)
     {
+
         [inputButton setTitle:@"Kilogram" forState:UIControlStateNormal];
         [outputButton setTitle:@"Gram" forState:UIControlStateNormal];
         [units addObjectsFromArray:[NSArray arrayWithObjects:@"Gram", @"Kilogram",  @"Ounce", @"Pound", nil]];
     }
     
     [self resetValue];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    
+    if (app.adBanner.superview != nil)
+    {
+        [app.adBanner removeFromSuperview];
+    }
+    CGRect rect = app.adBanner.frame;
+    rect.origin.y = self.view.frame.size.height -  CGSizeFromGADAdSize(kGADAdSizeBanner).height;
+    app.adBanner.frame = rect;
+    app.adBanner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+    [self.view addSubview:app.adBanner];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    if (dropDown != nil)
+    {
+        [self showUnit:nil];
+    }
 }
 
 - (IBAction)showInputUnit:(id)sender
@@ -93,6 +121,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:alpa]
 {
     [inputTextField resignFirstResponder];
     [self resetValue];
+    if (dropDown != nil)
+    {
+        [self showUnit:nil];
+    }
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
